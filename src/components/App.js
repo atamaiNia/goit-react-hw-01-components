@@ -28,7 +28,7 @@ export const App = () => {
       </TaskContainer>
 
       <TaskContainer title={'Task 2 - Statistics'}>
-        <Statistics stats={data} />
+        <Statistics title="Upload stats" stats={data} />
       </TaskContainer>
 
       <TaskContainer title={'Task 3 - FriendList'}>

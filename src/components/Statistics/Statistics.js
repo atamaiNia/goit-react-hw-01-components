@@ -9,10 +9,10 @@ import {
   Value,
 } from 'components/Statistics/Statistics.styled';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Title>Upload stats</Title>
+      <Title>{title}</Title>
       <List>
         {stats.map(el => (
           <Item key={el.id}>
@@ -26,6 +26,7 @@ export const Statistics = ({ stats }) => {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
